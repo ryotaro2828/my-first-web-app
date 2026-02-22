@@ -10,3 +10,116 @@
     <p>This is my first GitHub Pages deployment!</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>映画紹介ページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .movie-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .genre {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .actor {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>映画紹介ページ</h1>
+  <p>おすすめ映画一覧</p>
+</header>
+
+<section class="movies">
+
+  <div class="movie-card">
+    <div class="movie-title">インセプション</div>
+    <div class="genre">SF / アクション</div>
+    <div class="actor">主演：レオナルド・ディカプリオ</div>
+  </div>
+
+  <div class="movie-card">
+    <div class="movie-title">タイタニック</div>
+    <div class="genre">ロマンス / ドラマ</div>
+    <div class="actor">主演：レオナルド・ディカプリオ</div>
+  </div>
+
+  <div class="movie-card">
+    <div class="movie-title">アベンジャーズ</div>
+    <div class="genre">アクション / ヒーロー</div>
+    <div class="actor">主演：ロバート・ダウニー・Jr.</div>
+  </div>
+
+  <div class="movie-card">
+    <div class="movie-title">君の名は。</div>
+    <div class="genre">アニメ / ロマンス</div>
+    <div class="actor">主演：神木隆之介</div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Movie Introduction Page
+</footer>
+
+</body>
+</html>
